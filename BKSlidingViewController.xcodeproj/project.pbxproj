@@ -1,0 +1,264 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B1C596A1988429A00A9FC48 /* UIViewController+BKTag.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6BEE0A2C1987100100D73B41 /* UIViewController+BKTag.h */; };
+		6B822986198824F9004FC71E /* BKDeltaCalculator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6BEE0A2D1987100100D73B41 /* BKDeltaCalculator.h */; };
+		6BEE0A1519870F5700D73B41 /* BKSlidingViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6BEE0A1419870F5700D73B41 /* BKSlidingViewController.h */; };
+		6BEE0A1719870F5700D73B41 /* BKSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE0A1619870F5700D73B41 /* BKSlidingViewController.m */; };
+		6BEE0A2F1987100100D73B41 /* UIViewController+BKTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE0A2B1987100100D73B41 /* UIViewController+BKTag.m */; };
+		6BEE0A301987100100D73B41 /* BKDeltaCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE0A2E1987100100D73B41 /* BKDeltaCalculator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6BEE0A0F19870F5700D73B41 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				6B822986198824F9004FC71E /* BKDeltaCalculator.h in CopyFiles */,
+				6BEE0A1519870F5700D73B41 /* BKSlidingViewController.h in CopyFiles */,
+				6B1C596A1988429A00A9FC48 /* UIViewController+BKTag.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6BEE0A1119870F5700D73B41 /* libBKSlidingViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBKSlidingViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BEE0A1419870F5700D73B41 /* BKSlidingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKSlidingViewController.h; sourceTree = "<group>"; };
+		6BEE0A1619870F5700D73B41 /* BKSlidingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKSlidingViewController.m; sourceTree = "<group>"; };
+		6BEE0A2B1987100100D73B41 /* UIViewController+BKTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BKTag.m"; sourceTree = "<group>"; };
+		6BEE0A2C1987100100D73B41 /* UIViewController+BKTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BKTag.h"; sourceTree = "<group>"; };
+		6BEE0A2D1987100100D73B41 /* BKDeltaCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKDeltaCalculator.h; sourceTree = "<group>"; };
+		6BEE0A2E1987100100D73B41 /* BKDeltaCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKDeltaCalculator.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BEE0A0E19870F5700D73B41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6BEE0A0819870F5700D73B41 = {
+			isa = PBXGroup;
+			children = (
+				6BEE0A1319870F5700D73B41 /* BKSlidingViewController */,
+				6BEE0A1219870F5700D73B41 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6BEE0A1219870F5700D73B41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE0A1119870F5700D73B41 /* libBKSlidingViewController.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BEE0A1319870F5700D73B41 /* BKSlidingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE0A2D1987100100D73B41 /* BKDeltaCalculator.h */,
+				6BEE0A2E1987100100D73B41 /* BKDeltaCalculator.m */,
+				6BEE0A1419870F5700D73B41 /* BKSlidingViewController.h */,
+				6BEE0A1619870F5700D73B41 /* BKSlidingViewController.m */,
+				6BEE0A2C1987100100D73B41 /* UIViewController+BKTag.h */,
+				6BEE0A2B1987100100D73B41 /* UIViewController+BKTag.m */,
+			);
+			path = BKSlidingViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6BEE0A1019870F5700D73B41 /* BKSlidingViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BEE0A2519870F5700D73B41 /* Build configuration list for PBXNativeTarget "BKSlidingViewController" */;
+			buildPhases = (
+				6BEE0A0D19870F5700D73B41 /* Sources */,
+				6BEE0A0E19870F5700D73B41 /* Frameworks */,
+				6BEE0A0F19870F5700D73B41 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BKSlidingViewController;
+			productName = BKSlidingViewController;
+			productReference = 6BEE0A1119870F5700D73B41 /* libBKSlidingViewController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BEE0A0919870F5700D73B41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "650 Industries, Inc.";
+				TargetAttributes = {
+					6BEE0A1019870F5700D73B41 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
+			};
+			buildConfigurationList = 6BEE0A0C19870F5700D73B41 /* Build configuration list for PBXProject "BKSlidingViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6BEE0A0819870F5700D73B41;
+			productRefGroup = 6BEE0A1219870F5700D73B41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BEE0A1019870F5700D73B41 /* BKSlidingViewController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BEE0A0D19870F5700D73B41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BEE0A301987100100D73B41 /* BKDeltaCalculator.m in Sources */,
+				6BEE0A1719870F5700D73B41 /* BKSlidingViewController.m in Sources */,
+				6BEE0A2F1987100100D73B41 /* UIViewController+BKTag.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6BEE0A2319870F5700D73B41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6BEE0A2419870F5700D73B41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6BEE0A2619870F5700D73B41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6BEE0A2719870F5700D73B41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BEE0A0C19870F5700D73B41 /* Build configuration list for PBXProject "BKSlidingViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BEE0A2319870F5700D73B41 /* Debug */,
+				6BEE0A2419870F5700D73B41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BEE0A2519870F5700D73B41 /* Build configuration list for PBXNativeTarget "BKSlidingViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BEE0A2619870F5700D73B41 /* Debug */,
+				6BEE0A2719870F5700D73B41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BEE0A0919870F5700D73B41 /* Project object */;
+}

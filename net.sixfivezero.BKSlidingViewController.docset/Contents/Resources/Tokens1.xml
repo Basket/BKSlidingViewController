@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/BKDeltaCalculator.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/BKDeltaCalculator</TokenIdentifier>
+			<Abstract type="html">BKDeltaCalculator takes two arrays as input and outputs a dictionary with the following keys:</Abstract>
+			<DeclaredIn>BKDeltaCalculator.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/BKDeltaCalculator/resolveDifferencesBetweenOldArray:newArray:</TokenIdentifier>
+			<Abstract type="html">Resolve differences between two versions of an array.</Abstract>
+			<DeclaredIn>BKDeltaCalculator.h</DeclaredIn>
+			
+			<Declaration>+ (NSDictionary *)resolveDifferencesBetweenOldArray:(id)oldArray newArray:(id)newArray</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>oldArray</Name>
+					<Abstract type="html">the array representing the &quot;old&quot; version of the array</Abstract>
+				</Parameter><Parameter>
+					<Name>newArray</Name>
+					<Abstract type="html">the array representing the &quot;new&quot; version of the array.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A dictionary containing NSIndexSets representing added, moved, removed, and unchanged elements.</Abstract></ReturnValue>
+			<Anchor>//api/name/resolveDifferencesBetweenOldArray:newArray:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
