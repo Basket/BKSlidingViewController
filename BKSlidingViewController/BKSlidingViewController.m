@@ -106,7 +106,7 @@ typedef NS_ENUM(NSUInteger, BKSlidingViewControllerVisibility) {
     [_viewControllers removeObjectsAtIndexes:removedIndices];
 
     [addedIndices enumerateIndexesUsingBlock:^(NSUInteger idx, BOOL *stop) {
-        UIViewController *addedVC = addedViewControllers[idx];
+        UIViewController *addedVC = viewControllers[idx];
         UIView *parentView = [[UIView alloc] init];
         [parentView addSubview:addedVC.view];
 
@@ -143,6 +143,7 @@ typedef NS_ENUM(NSUInteger, BKSlidingViewControllerVisibility) {
             [self addChildViewController:(UIViewController *)obj];
             UIView *parentView = addedParentViews[idx];
             [_scrollView addSubview:parentView];
+            [self.view setNeedsLayout];
         }];
 
         _scrollView.contentSize = CGSizeMake(_viewControllers.count * CGRectGetWidth(_scrollView.bounds), CGRectGetHeight(_scrollView.bounds));
