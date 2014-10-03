@@ -184,7 +184,7 @@ typedef NS_ENUM(NSUInteger, BKSlidingViewControllerVisibility) {
     }
 }
 
-- (void)setSelectedIndex:(NSUInteger)selectedIndex
+- (void)setSelectedIndex:(NSInteger)selectedIndex
 {
     if (_selectedIndex != selectedIndex) {
         NSAssert(selectedIndex < _viewControllers.count, @"Cannot select an index which is out of range");

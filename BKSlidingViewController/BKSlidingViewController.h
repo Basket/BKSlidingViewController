@@ -26,7 +26,7 @@
 /**
  The index of the view controller being shown by the sliding view controller.
  */
-@property (nonatomic, assign) NSUInteger selectedIndex;
+@property (nonatomic, assign) NSInteger selectedIndex;
 
 /**
  The view controller in the sliding view controller assigned the given tag.
