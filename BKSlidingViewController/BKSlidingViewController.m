@@ -51,7 +51,6 @@ typedef NS_ENUM(NSUInteger, BKSlidingViewControllerVisibility) {
 {
     [super viewDidLoad];
     _scrollView = [[UIScrollView alloc] init];
-    _scrollView.backgroundColor = [UIColor blackColor];
     _scrollView.bounces = NO;
     _scrollView.delaysContentTouches = NO;
     _scrollView.delegate = self;
