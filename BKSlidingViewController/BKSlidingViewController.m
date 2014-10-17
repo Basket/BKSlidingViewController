@@ -32,17 +32,31 @@ typedef NS_ENUM(NSUInteger, BKSlidingViewControllerVisibility) {
     CGFloat _interPageSpacing;
 }
 
+
 @synthesize viewControllers = _viewControllers;
+
+- (void)_initializeInstance
+{
+    _interPageSpacing = 1;
+    _viewControllers = [NSMutableArray array];
+    _viewControllerParentViews = [NSMutableArray array];
+    _viewControllersVisible = [NSMapTable weakToStrongObjectsMapTable];
+    _viewControllersShouldChangeVisibility = [NSMapTable weakToStrongObjectsMapTable];
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    if (self = [super initWithCoder:aDecoder]) {
+        [self _initializeInstance];
+    }
+    return self;
+}
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        _interPageSpacing = 1;
-        _viewControllers = [NSMutableArray array];
-        _viewControllerParentViews = [NSMutableArray array];
-        _viewControllersVisible = [NSMapTable weakToStrongObjectsMapTable];
-        _viewControllersShouldChangeVisibility = [NSMapTable weakToStrongObjectsMapTable];
+
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        [self _initializeInstance];
     }
     return self;
 }
