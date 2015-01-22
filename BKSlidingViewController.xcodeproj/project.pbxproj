@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6B1C596A1988429A00A9FC48 /* UIViewController+BKTag.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6BEE0A2C1987100100D73B41 /* UIViewController+BKTag.h */; };
-		6B822986198824F9004FC71E /* BKDeltaCalculator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6BEE0A2D1987100100D73B41 /* BKDeltaCalculator.h */; };
 		6BEE0A1519870F5700D73B41 /* BKSlidingViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6BEE0A1419870F5700D73B41 /* BKSlidingViewController.h */; };
 		6BEE0A1719870F5700D73B41 /* BKSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE0A1619870F5700D73B41 /* BKSlidingViewController.m */; };
 		6BEE0A2F1987100100D73B41 /* UIViewController+BKTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE0A2B1987100100D73B41 /* UIViewController+BKTag.m */; };
-		6BEE0A301987100100D73B41 /* BKDeltaCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE0A2E1987100100D73B41 /* BKDeltaCalculator.m */; };
+		99F09A4D684D3A42BD66C3F8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D185DA94EBEB7EEC1ABA50 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -22,7 +21,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				6B822986198824F9004FC71E /* BKDeltaCalculator.h in CopyFiles */,
 				6BEE0A1519870F5700D73B41 /* BKSlidingViewController.h in CopyFiles */,
 				6B1C596A1988429A00A9FC48 /* UIViewController+BKTag.h in CopyFiles */,
 			);
@@ -31,13 +29,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2203431D931E412C4EAE5910 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		49D185DA94EBEB7EEC1ABA50 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BEE0A1119870F5700D73B41 /* libBKSlidingViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBKSlidingViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BEE0A1419870F5700D73B41 /* BKSlidingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKSlidingViewController.h; sourceTree = "<group>"; };
 		6BEE0A1619870F5700D73B41 /* BKSlidingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKSlidingViewController.m; sourceTree = "<group>"; };
 		6BEE0A2B1987100100D73B41 /* UIViewController+BKTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BKTag.m"; sourceTree = "<group>"; };
 		6BEE0A2C1987100100D73B41 /* UIViewController+BKTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BKTag.h"; sourceTree = "<group>"; };
-		6BEE0A2D1987100100D73B41 /* BKDeltaCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKDeltaCalculator.h; sourceTree = "<group>"; };
-		6BEE0A2E1987100100D73B41 /* BKDeltaCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKDeltaCalculator.m; sourceTree = "<group>"; };
+		D6D49356F45D34F97B1E885A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +44,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99F09A4D684D3A42BD66C3F8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18B88C314925A5946098028A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6D49356F45D34F97B1E885A /* Pods.debug.xcconfig */,
+				2203431D931E412C4EAE5910 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6BEE0A0819870F5700D73B41 = {
 			isa = PBXGroup;
 			children = (
 				6BEE0A1319870F5700D73B41 /* BKSlidingViewController */,
 				6BEE0A1219870F5700D73B41 /* Products */,
+				18B88C314925A5946098028A /* Pods */,
+				7A56D345A85686D265F48F26 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,14 +81,20 @@
 		6BEE0A1319870F5700D73B41 /* BKSlidingViewController */ = {
 			isa = PBXGroup;
 			children = (
-				6BEE0A2D1987100100D73B41 /* BKDeltaCalculator.h */,
-				6BEE0A2E1987100100D73B41 /* BKDeltaCalculator.m */,
 				6BEE0A1419870F5700D73B41 /* BKSlidingViewController.h */,
 				6BEE0A1619870F5700D73B41 /* BKSlidingViewController.m */,
 				6BEE0A2C1987100100D73B41 /* UIViewController+BKTag.h */,
 				6BEE0A2B1987100100D73B41 /* UIViewController+BKTag.m */,
 			);
 			path = BKSlidingViewController;
+			sourceTree = "<group>";
+		};
+		7A56D345A85686D265F48F26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49D185DA94EBEB7EEC1ABA50 /* libPods.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BEE0A2519870F5700D73B41 /* Build configuration list for PBXNativeTarget "BKSlidingViewController" */;
 			buildPhases = (
+				850533F88D5B73D818D4C5A2 /* Check Pods Manifest.lock */,
 				6BEE0A0D19870F5700D73B41 /* Sources */,
 				6BEE0A0E19870F5700D73B41 /* Frameworks */,
 				6BEE0A0F19870F5700D73B41 /* CopyFiles */,
+				BBB21D433F36FBB84D7A38CD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +150,44 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		850533F88D5B73D818D4C5A2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BBB21D433F36FBB84D7A38CD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6BEE0A0D19870F5700D73B41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BEE0A301987100100D73B41 /* BKDeltaCalculator.m in Sources */,
 				6BEE0A1719870F5700D73B41 /* BKSlidingViewController.m in Sources */,
 				6BEE0A2F1987100100D73B41 /* UIViewController+BKTag.m in Sources */,
 			);
@@ -221,8 +272,8 @@
 		};
 		6BEE0A2619870F5700D73B41 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6D49356F45D34F97B1E885A /* Pods.debug.xcconfig */;
 			buildSettings = {
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -230,8 +281,8 @@
 		};
 		6BEE0A2719870F5700D73B41 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2203431D931E412C4EAE5910 /* Pods.release.xcconfig */;
 			buildSettings = {
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};

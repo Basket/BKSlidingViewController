@@ -2,7 +2,9 @@
 
 #import "BKSlidingViewController.h"
 
-#import "BKDeltaCalculator.h"
+#import <BKDeltaCalculator/BKDelta.h>
+#import <BKDeltaCalculator/BKDeltaCalculator.h>
+
 #import "UIViewController+BKTag.h"
 
 typedef NS_ENUM(NSUInteger, BKSlidingViewControllerVisibility) {
@@ -107,9 +109,9 @@ typedef NS_ENUM(NSUInteger, BKSlidingViewControllerVisibility) {
     UIViewController *maximallyVisibleVC = [self _maximallyVisibleViewController];
 
     // [[[ Calculate viewcontroller differences and sync up the parent views.
-    NSDictionary *differences = [BKDeltaCalculator resolveDifferencesBetweenOldArray:_viewControllers newArray:viewControllers];
-    NSIndexSet *removedIndices = differences[BKValueChangeRemovedKey];
-    NSIndexSet *addedIndices = differences[BKValueChangeAddedKey];
+    BKDelta *differences = [[BKDeltaCalculator defaultCalculator] deltaFromOldArray:_viewControllers toNewArray:viewControllers];
+    NSIndexSet *removedIndices = differences.removedIndices;
+    NSIndexSet *addedIndices = differences.addedIndices;
 
     NSArray *removedViewControllers = [_viewControllers objectsAtIndexes:removedIndices];
     NSArray *addedViewControllers = [viewControllers objectsAtIndexes:addedIndices];

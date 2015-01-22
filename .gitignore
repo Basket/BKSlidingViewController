@@ -25,7 +25,7 @@ profile
 
 ####
 # Xcode temporary files that should never be committed
-# 
+#
 # NB: NIB/XIB files still exist even on Storyboard projects, so we want this...
 
 *~.nib
@@ -127,3 +127,10 @@ xcuserdata
 # UNKNOWN: recommended by others, but I can't discover what these files are
 #
 # ...none. Everything is now explained.
+
+####
+# CocoaPods
+#
+# Include Podfile and Podfile.lock but ignore the pods themselves
+
+Pods/

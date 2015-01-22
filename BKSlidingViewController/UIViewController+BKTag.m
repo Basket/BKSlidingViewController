@@ -14,7 +14,6 @@ static const void *UIViewControllerBKTagKey = "UIViewControllerBKTagKey";
     objc_setAssociatedObject(self, UIViewControllerBKTagKey, value, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
-
 - (NSInteger)bk_tag
 {
     NSNumber *value = objc_getAssociatedObject(self, UIViewControllerBKTagKey);

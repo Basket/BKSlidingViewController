@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>ED84C76A-DE3B-4E6C-A10C-6FDDF0B32AD0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BKSlidingViewController</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1B08D3D30C4A91BCCEA949ABBC700BC102BC97AD</key>
+		<string>github.com:Basket/BKSlidingViewController.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BKSlidingViewController.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1B08D3D30C4A91BCCEA949ABBC700BC102BC97AD</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:Basket/BKSlidingViewController.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1B08D3D30C4A91BCCEA949ABBC700BC102BC97AD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1B08D3D30C4A91BCCEA949ABBC700BC102BC97AD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BKSlidingViewController</string>
+		</dict>
+	</array>
+</dict>
+</plist>
