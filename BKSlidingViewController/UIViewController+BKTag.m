@@ -1,4 +1,4 @@
-// Copyright 2014-present 650 Industries. All rights reserved.
+// Copyright 2014-present 650 Industries.
 
 #import "UIViewController+BKTag.h"
 
