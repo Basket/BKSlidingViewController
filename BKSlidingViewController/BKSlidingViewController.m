@@ -72,6 +72,7 @@ typedef NS_ENUM(NSUInteger, BKSlidingViewControllerVisibility) {
     _scrollView.delegate = self;
     _scrollView.pagingEnabled = YES;
     _scrollView.showsHorizontalScrollIndicator = NO;
+    _scrollView.scrollsToTop = NO;
     [self.view addSubview:_scrollView];
 }
 
