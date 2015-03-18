@@ -1,6 +1,8 @@
-// Copyright 2014-present 650 Industries. All rights reserved.
+// Copyright 2014-present 650 Industries.
+// Copyright 2015-present Andy Toulouse.
 
 #import "BKSlidingViewController.h"
+#import "BKSlidingViewController_Extras.h"
 
 #import <BKDeltaCalculator/BKDelta.h>
 #import <BKDeltaCalculator/BKDeltaCalculator.h>
@@ -274,7 +276,14 @@ typedef NS_ENUM(NSUInteger, BKSlidingViewControllerVisibility) {
     return _selectedViewController;
 }
 
-#pragma mark - UIScrollViewDelegate methods
+#pragma mark - <UIScrollViewDelegate>
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    if ([_delegate respondsToSelector:@selector(slidingViewControllerWillBeginDragging:)]) {
+        [_delegate slidingViewControllerWillBeginDragging:self];
+    }
+}
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
@@ -301,6 +310,10 @@ typedef NS_ENUM(NSUInteger, BKSlidingViewControllerVisibility) {
                                              [self _updateAppearanceForViewControllerIfNeeded:vc animated:YES];
                                          }
                                      }];
+
+    if ([_delegate respondsToSelector:@selector(slidingViewControllerDidScroll:)]) {
+        [_delegate slidingViewControllerDidScroll:self];
+    }
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
@@ -316,6 +329,28 @@ typedef NS_ENUM(NSUInteger, BKSlidingViewControllerVisibility) {
 
     [self _setSelectedViewController:maximallyVisibleVC];
     [self updateSelectedIndexIfNeeded];
+
+    if ([_delegate respondsToSelector:@selector(slidingViewControllerDidEndDecelerating:)]) {
+        [_delegate slidingViewControllerDidEndDecelerating:self];
+    }
+}
+
+#pragma mark - Extra method
+
+- (CGFloat)percentScrolled
+{
+    CGFloat screenWidth = CGRectGetWidth(_scrollView.bounds);
+    CGFloat totalWidth = _scrollView.contentSize.width + _scrollView.contentInset.left + _scrollView.contentInset.right;
+    CGFloat workingWidth = totalWidth - screenWidth;
+
+    CGFloat insetAdjustedXOffset = _scrollView.contentInset.left + _scrollView.contentOffset.x;
+    CGFloat percent;
+    if (workingWidth == 0) {
+        percent = 0.5;
+    } else {
+        percent = insetAdjustedXOffset / workingWidth;
+    }
+    return percent;
 }
 
 #pragma mark - Rotation (NOTE: currently disabled)
