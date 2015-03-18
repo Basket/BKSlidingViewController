@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "BKSlidingViewController"
-  s.version          = "1.0.0"
+  s.version          = "1.1.0"
   s.summary          = "A side-scrolling view controller container class with a minimal, UITabBarController-like API."
   s.description      = <<-DESC
                        UIPageViewController seems somewhat rigidly designed for paginated content, and is very efficient at lazily instantiating many view controllers with a particular pattern (before/after) and specific spatial metaphors. While it can do many things well, customization is ultimately limited by permissible alterations of the UIPageViewController class.
